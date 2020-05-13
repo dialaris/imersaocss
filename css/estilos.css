@@ -1,19 +1,52 @@
+* {
+margin: 0;
+padding: 0; 
+box-sizing: border-box;
+}
+
 body {
-    background-image: url(https://dzbc.org/wp-content/uploads/data/2018/2/23/Fuze-Branding-You-Got-This-Mint-Wallpaper-PIC-MCH067190-1024x640.jpg);
-    background-size: auto 100vh;
+    background: linear-gradient(to 
+    right top, #F0AFBA,#FFDEE9,#FFFCB5);
+    background-size: 100%;
     font-family: Nunito;
     height: 100vh;
   }
-  
+/* se a tela tiver pelo menos 400px vai carregar estes estilos*/
+  @media (min-widht: 400px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  @media (min-widht: 400-x) {
+    body {
+      font-size: 25px;
+    }
+  }
+  header {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .menu {
     background-color: #F0F9F8;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
   }
   
   .menu ul { 
-  display: flex;
-    justify-content: space-around; 
+   display: flex;
+   justify-content: space-around; 
   }
   
+  /* não lembro a diferença de li e ul */
   .menu li {
     list-style: none; 
   }
@@ -30,10 +63,30 @@ body {
   .site-title {
     color: whitesmoke;
     text-align: center;
+    text-shadow: #F0AFBA 1px 1px 5px;
   }
   
   .site-subtitle {
-    color: #C0CAC7;
+    color: rgb(179, 179, 179);
     text-align: center;
-    font-style: italic;
+    font-family: 'Courier New';
+    font-size: medium;
   }
+
+  .img-portfolio {
+    width: 180px;
+    height: 180px;
+
+  }
+
+  .header div {
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    overflow: 0;
+    font-size: small;
+    text-align: center;
+
+
+  }
+
